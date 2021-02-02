@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.summary-checkbox-label {
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+
+.summary-button {
+  margin-left: -8%;
+}
