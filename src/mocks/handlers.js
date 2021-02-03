@@ -1,11 +1,14 @@
-
 import {rest} from 'msw';
 
 
 /* Default  */
 export const handlers = [
-    // Handles a POST /login request
-    rest.post('/login', null),
-    // Handles a GET /user request
-    rest.get('/user', null),
+    rest.get('http://localhost:3030/scoops', (req, res, ctx) => {
+        return res(
+            ctx.json([
+                {name: 'Chocolate', imagePath: '/images/chocolate.png'},
+                {name: 'Vanilla', imagePath: '/images/vanilla.png'}
+            ])
+        );
+    })
 ]
